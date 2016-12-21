@@ -460,6 +460,10 @@ template {
   display: none;
 }
 
+/* Typography*/
+
+/* GENERAL COLOR*/
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -471,4 +475,49 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.hero {
+    border:2px solid red;
+    background: -webkit-linear-gradient(135deg,#333844,#34497c);
+    background: linear-gradient(-45deg,#333844,#34497c);
+    height: 100vh;
+
+}
+
+.hero__group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border:1px solid red;
+}
+
+.hero__profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border:1px solid red;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 300;
+  border:1px solid red;
+}
+
+.hero__subtitle {
+  color: #fff;
+  font-weight: 300;
+  display: block;
+  border:1px solid red;
 }
