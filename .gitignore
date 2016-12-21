@@ -1,2 +1,7 @@
+
 resource/*
-*psd
+*.psd
+
+web-static/node_modules/*
+
+
