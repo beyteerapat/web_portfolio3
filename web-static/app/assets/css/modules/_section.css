@@ -1,0 +1,11 @@
+.section {
+
+    &__title {
+        /*Typography*/
+        color: $mainBlue;
+        font-size: 2.5rem;
+        font-weight: 600;
+        /*Postion*/
+        margin-bottom: 80px;
+    }
+}

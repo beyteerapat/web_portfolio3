@@ -1,0 +1,84 @@
+.education {
+
+    padding: 80px 0;
+    text-align: center;
+    background: #F7F7F7;
+
+    &__row {
+        width: 100%;
+        position: relative;
+    }
+
+    &__group {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        /*Centering Text*/
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /*Transparent BG*/
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+
+        &-year {
+            /*Typography*/
+            color: $whiteText;
+            font-size: 1.3rem;
+            font-weight: 300;
+            /*Fix position*/
+            position: absolute;
+            top: 0;
+            width: 100%;
+            margin: 15px auto 0;
+            padding: 0;
+        }
+
+        &-title {
+
+            /*Typography*/
+            color: $whiteText;
+            font-size: 1.5rem;
+            font-weight: 300;
+            /*Fix position*/
+            position: absolute;
+            top: 50%;
+            transform: translateY(-15px);
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        &-subtitle {
+            /*Typography*/
+            color: $whiteText;
+            font-size: .9rem;
+            font-weight: 300;
+            /*Fix position*/
+            position: absolute;
+            top: 53%;
+            height: 100%;
+            width: 100%;
+        }
+
+        &-location {
+            /*Typography*/
+            color: $whiteText;
+            font-size: 1.2rem;
+            font-weight: 300;
+            /*Fix position*/
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto 15px;
+            padding: 0;
+        }
+
+    }
+
+}

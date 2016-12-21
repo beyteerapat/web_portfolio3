@@ -464,6 +464,8 @@ template {
 
 /* GENERAL COLOR*/
 
+/*SECTION BG*/
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -480,6 +482,13 @@ img {
 .wrapper {
     margin: 0 10px;
     padding: 0;
+}
+
+.section__title {/*Typography*/
+  color: #333844;
+  font-size: 2.5rem;
+  font-weight: 600;/*Postion*/
+  margin-bottom: 80px;
 }
 
 .hero {
@@ -520,4 +529,79 @@ img {
   font-weight: 300;
   display: block;
   border:1px solid red;
+}
+
+.education {
+
+    padding: 80px 0;
+    text-align: center;
+    background: #F7F7F7;
+
+}
+
+.education__row {
+  width: 100%;
+  position: relative;
+}
+
+.education__group {
+  margin-bottom: 30px;
+}
+
+.education__text {/*Centering Text*/
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);/*Transparent BG*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.education__text-year {/*Typography*/
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;/*Fix position*/
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 15px auto 0;
+  padding: 0;
+}
+
+.education__text-title {/*Typography*/
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;/*Fix position*/
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.education__text-subtitle {/*Typography*/
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 300;/*Fix position*/
+  position: absolute;
+  top: 53%;
+  height: 100%;
+  width: 100%;
+}
+
+.education__text-location {/*Typography*/
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;/*Fix position*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto 15px;
+  padding: 0;
 }
