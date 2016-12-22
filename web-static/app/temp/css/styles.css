@@ -466,6 +466,8 @@ template {
 
 /*SECTION BG*/
 
+/*$skillbar*/
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -491,7 +493,7 @@ img {
 
 .section__title {/*Typography*/
   color: #333844;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;/*Postion*/
   margin-bottom: 100px;
 }
@@ -523,11 +525,13 @@ img {
 .hero__title {
   color: #fff;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .hero__subtitle {
   color: #9e9e9e;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 .education {
@@ -552,26 +556,29 @@ img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);/*Transparent BG*/
+          transform: translate(-50%,-50%);
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
 }
+
+/*        background: rgba(0,0,0,0.2);*/
 
 .education__text-year {/*Typography*/
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;/*Fix position*/
   position: absolute;
   top: 0;
   width: 100%;
-  margin: 15px auto 0;
+  margin: 18px auto 0;
   padding: 0;
 }
 
+/*Transparent BG*/
+
 .education__text-title {/*Typography*/
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 300;/*Fix position*/
   position: absolute;
   top: 50%;
@@ -580,22 +587,22 @@ img {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
 }
 
 .education__text-subtitle {/*Typography*/
   color: #fff;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 300;/*Fix position*/
   position: absolute;
-  top: 53%;
+  top: 50%;
   height: 100%;
   width: 100%;
 }
 
 .education__text-location {/*Typography*/
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;/*Fix position*/
   position: absolute;
   bottom: 0;
@@ -606,8 +613,9 @@ img {
 
 .experience {
     text-align: center;
-    background: url("/assets/img/experience-bg.jpg") center center no-repeat fixed;
+    background:url("/assets/img/experience-bg.jpg")  center center no-repeat fixed;
     background-size: cover;
+    position: relative;
 }
 
 .experience__headline {
@@ -620,14 +628,129 @@ img {
 }
 
 .experience__title {/*border: 1px solid red;*/
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ECECEC;
   margin: 0;
 }
 
 .experience__subtitle {/*border: 1px solid blue;*/
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #9e9e9e;
   margin: 0;
 }
+
+/*Transparent overlay*/
+
+.experience::after {
+  content: " ";
+  z-index: 2;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+    background: #F7F7F7;
+    text-align: center;
+}
+
+.skill__list {
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.skill__group {/*        border: 2px dashed brown;*/
+  position: relative;
+  margin: 5px 0;
+  padding: 10px 10px 0;
+}
+
+.skill__group-title {/*Typography*/
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9e9e9e;/*Postion*/
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto 15px;
+}
+
+.skill__group-bar {
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin-top: 3px;
+}
+
+.skill__group-bar-top {
+  background: #0091ea;
+  position: absolute;
+  height: 7px;
+}
+
+.skill__group-bar-top-1 {
+  width: 135px;
+}
+
+.skill__group-bar-top-2 {
+  width: 75px;
+}
+
+.skill__group-bar-top-3 {
+  width: 105px;
+}
+
+.skill__group-bar-top-4 {
+  width: 112.5px;
+}
+
+.skill__group-bar-top-5 {
+  width: 90px;
+}
+
+.skill__group-bar-top-6 {
+  width: 120px;
+}
+
+.skill__group-bar-top-7 {
+  width: 105px;
+}
+
+.skill__group-bar-top-8 {
+  width: 75px;
+}
+
+.skill__group-bar-top-9 {
+  width: 97.5px;
+}
+
+.skill__group-bar-top-10 {
+  width: 75px;
+}
+
+.skill__group-bar-top-11 {
+  width: 45px;
+}
+
+.skill__group-bar-top-12 {
+  width: 67.5px;
+}
+
+.skill__group-bar-bottom {
+  background: #e0e0e0;
+  width: 150px;
+  height: 7px;
+}
+
+.clearfix:after {
+            content: " ";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }

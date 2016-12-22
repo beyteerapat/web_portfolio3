@@ -19,21 +19,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        /*Transparent BG*/
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.5);
+        /*Transparent BG*/
+/*        background: rgba(0,0,0,0.2);*/
 
         &-year {
             /*Typography*/
             color: $whiteText;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 300;
             /*Fix position*/
             position: absolute;
             top: 0;
             width: 100%;
-            margin: 15px auto 0;
+            margin: 18px auto 0;
             padding: 0;
         }
 
@@ -41,7 +41,7 @@
 
             /*Typography*/
             color: $whiteText;
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 300;
             /*Fix position*/
             position: absolute;
@@ -50,17 +50,17 @@
             height: 100%;
             width: 100%;
             margin: 0;
-            padding: 0;
+            padding: 0 5px;
         }
 
         &-subtitle {
             /*Typography*/
             color: $whiteText;
-            font-size: .9rem;
+            font-size: .8rem;
             font-weight: 300;
             /*Fix position*/
             position: absolute;
-            top: 53%;
+            top: 50%;
             height: 100%;
             width: 100%;
         }
@@ -68,7 +68,7 @@
         &-location {
             /*Typography*/
             color: $whiteText;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 300;
             /*Fix position*/
             position: absolute;

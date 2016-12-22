@@ -1,0 +1,72 @@
+.skill {
+    background: $bgWhite;
+    text-align: center;
+
+    &__list {
+        margin: 0 auto;
+        min-width: 280px;
+        max-width: 500px;
+    }
+
+    &__group {
+/*        border: 2px dashed brown;*/
+        position: relative;
+        margin: 5px 0;
+        padding: 10px 10px 0;
+
+
+        &-title {
+            /*Typography*/
+            font-size: 1rem;
+            font-weight: 400;
+            color: $grayText;
+            /*Postion*/
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto 15px;
+        }
+
+        &-bar {
+            float: right;
+            display: inline-block;
+
+            position: relative;
+            margin-top: 3px;
+
+            &-top {
+                background: $skillBarTop;
+                position: absolute;
+                height: 7px;
+                &-1 { width: 135px; }
+                &-2 { width: 75px; }
+                &-3 { width: 105px; }
+                &-4 { width: 112.5px; }
+                &-5 { width: 90px; }
+                &-6 { width: 120px; }
+                &-7 { width: 105px; }
+                &-8 { width: 75px; }
+                &-9 { width: 97.5px; }
+                &-10 { width: 75px; }
+                &-11 { width: 45px; }
+                &-12 { width: 67.5px; }
+
+            }
+
+            &-bottom {
+                background: $skillBarBottom;
+                width: 150px;
+                height: 7px;
+            }
+
+        }
+
+    }
+}
+
+.clearfix:after {
+            content: " ";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
