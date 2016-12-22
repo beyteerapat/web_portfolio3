@@ -1,0 +1,29 @@
+.experience {
+    text-align: center;
+    background: url("/assets/img/experience-bg.jpg") center center no-repeat fixed;
+    background-size: cover;
+
+    &__headline {
+        color: $whiteText;
+        font-weight: 300;
+    }
+
+    &__group {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        /*border: 1px solid red;*/
+        font-size: 2rem;
+        color: #ECECEC;
+        margin: 0;
+    }
+
+    &__subtitle {
+        /*border: 1px solid blue;*/
+        font-size: 1.4rem;
+        font-weight: 200;
+        color: $grayText;
+        margin: 0;
+    }
+}

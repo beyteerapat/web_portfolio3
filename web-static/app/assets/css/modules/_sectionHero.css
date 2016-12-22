@@ -1,5 +1,4 @@
 .hero {
-    border:2px solid red;
     background: linear-gradient(-45deg,$mainBlue,$subBlue);
     height: 100vh;
 
@@ -11,28 +10,22 @@
         text-align: center;
         width: 100%;
         height: auto;
-        border:1px solid red;
     }
 
     &__profile {
         width: 200px;
         height: 200px;
         border-radius: 100%;
-        border:1px solid red;
     }
 
     &__title {
-
         color: $whiteText;
         font-weight: 300;
-        border:1px solid red;
     }
 
     &__subtitle {
-        color: $whiteText;
+        color: $grayText;
         font-weight: 300;
-        display: block;
-        border:1px solid red;
     }
 
 }
