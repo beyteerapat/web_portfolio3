@@ -856,3 +856,32 @@ img {
   background: #ed1b43;
   color: #fff;
 }
+
+.footer {
+    background: #333844;
+    width: 100%;
+
+}
+
+.footer__group {
+  position: relative;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer__left {
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.footer__right {
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
