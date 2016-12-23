@@ -486,6 +486,11 @@ img {
     padding: 0;
 }
 
+.wrapper__contact {
+  max-width: 400px;
+  margin: auto;
+}
+
 .section {
 
     padding: 80px 0;
@@ -496,6 +501,11 @@ img {
   font-size: 2rem;
   font-weight: 600;/*Postion*/
   margin-bottom: 100px;
+}
+
+.section__title-contact {
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -517,8 +527,8 @@ img {
 }
 
 .hero__profile {
-  width: 200px;
-  height: 200px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 100%;
 }
 
@@ -526,6 +536,7 @@ img {
   color: #fff;
   font-weight: 300;
   font-size: 1.5rem;
+  margin-top: 40px;
 }
 
 .hero__subtitle {
@@ -628,7 +639,7 @@ img {
 }
 
 .experience__title {/*border: 1px solid red;*/
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ECECEC;
   margin: 0;
 }
@@ -754,3 +765,94 @@ img {
             height: 0;
             clear: both;
         }
+
+.interest {
+    background: #e9ebee;
+    text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    min-width: 100px;
+    max-width: 120px;
+    margin: 0 15px 20px;
+    display: inline-block;
+}
+
+.card__group {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3d4351;
+  padding: 0;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 3px rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+}
+
+.contact {
+    text-align: center;
+    background: #333844;
+
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact__group {
+  width: 350px;
+  text-align: left;
+  margin: 0 auto 15px;
+}
+
+.contact__group-label {/*POSITION*/
+  display: block;
+  text-align: left;
+  margin-bottom: 0.2rem;
+  padding-left: 5px;/*tYPOGRAPHY*/
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contact__group-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  border:1px solid #888;
+}
+
+.contact__group-textarea {
+  width: 350px;
+  min-height: 100px;
+  border-radius: 10px;
+}
+
+.contact__group-submit {
+  padding: 8px 10px;
+  width: 150px;
+  border-radius: 10px;
+  border:1px solid #ed1b43;
+  background: #ed1b43;
+  color: #fff;
+}

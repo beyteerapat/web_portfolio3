@@ -10,6 +10,9 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
 
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
   <!-- My Styles -->
   <link href="temp/css/styles.css" rel="stylesheet">
 
@@ -45,14 +48,14 @@
 
           <div class="education__row">
             <div class="education__group">
-                <div class="education__img-cover">
+              <div class="education__img-cover">
                 <a href=""><img class="education__img" src="assets/img/education-wakayama-medium-cover.jpg" alt="edu-wakayama"></a>
-                </div>
-                <div class="education__text">
-                  <p class="education__text-year">2013</p>
-                  <p class="education__text-title">WAKAYAMA COLLEGE OF FOREIGN STUDIES</p>
-                  <p class="education__text-location">WAKAYAMA, JAPAN</p>
-                </div>
+              </div>
+              <div class="education__text">
+                <p class="education__text-year">2013</p>
+                <p class="education__text-title">WAKAYAMA COLLEGE OF FOREIGN STUDIES</p>
+                <p class="education__text-location">WAKAYAMA, JAPAN</p>
+              </div>
             </div>
           </div>
 
@@ -200,35 +203,92 @@
         </div>
       </div>
       <!-- SECTION INTEREST -->
-      <div>
+      <div class="interest section">
 
-        <div>
-          <img src="" alt="interest-img">
-          <p>INTEREST TEXT</p>
-        </div>
+        <div class="wrapper">
 
-      </div>
+          <p class="section__title">Interest &amp; Hobbies</p>
+
+          <div class="card__group">
+
+            <div class="card">
+              <img src="assets/img/interest-react.png" alt="react" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">React</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-es6.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">ES2015</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-gulp.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">Gulp</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-nodejs.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">nodejs</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-docker.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">docker</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-github.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">Github</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-udemy.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">Udemy</h4>
+              </div>
+            </div> <!-- card -->
+            <div class="card">
+              <img src="assets/img/interest-lynda.png" alt="es6" style="width:100%">
+              <div class="container">
+                <h4 class="card-title">Lynda</h4>
+              </div>
+            </div> <!-- card -->
+
+          </div> <!-- card group -->
+
+        </div> <!-- wrapper -->
+
+      </div> <!-- INTEREST -->
 
       <!-- SECTION CONTACT -->
-      <div>
-        <h1>CONTACT</h1>
+      <div class="contact section">
 
-        <div>
-          <label>NAME</label>
-          <input type="text" name="" placeholder="YOUR NAME">
+        <h1 class="section__title section__title-contact">CONTACT</h1>
+
+        <form class="contact__form">
+          <div class="contact__group">
+            <label class="contact__group-label" for="name">Your Name</label>
+            <input class="contact__group-input" type="text" name="name" placeholder=" Your Name">
+          </div>
+          <div class="contact__group">
+            <label class="contact__group-label" for="email">Your Email</label>
+            <input class="contact__group-input" type="email" name="name" placeholder=" Your Email">
+          </div>
+          <div class="contact__group">
+            <label class="contact__group-label" for="email">Your Email</label>
+            <textarea class="contact__group-textarea" placeholder=" Message"></textarea>
+          </div>
+
+          <input class="contact__group-submit" type="submit" name="submit">
+        </form>
+
         </div>
-
-        <div>
-          <label>EMAIL</label>
-          <input type="text" name="" placeholder="YOUR EMAIL">
-        </div>
-
-        <div>
-          <label>MESSAGE</label>
-          <textarea placeholder="MESSAGE"></textarea>
-        </div>
-
-        <button>SUBMIT</button>
 
       </div>
 
@@ -243,5 +303,7 @@
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+      <!-- BOOTSTRAP -->
+      <script src="assets/js/bootstrap.min.js"></script>
     </body>
     </html>

@@ -9,5 +9,10 @@
         font-weight: 600;
         /*Postion*/
         margin-bottom: 100px;
+
+        &-contact {
+            color: $whiteText;
+            margin-bottom: 50px;
+        }
     }
 }

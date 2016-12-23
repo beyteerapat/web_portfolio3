@@ -1,0 +1,51 @@
+.contact {
+    text-align: center;
+    background: $mainBlue;
+
+    &__form {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    &__group {
+        width: 350px;
+        text-align: left;
+        margin: 0 auto 15px;
+
+        &-label {
+            /*POSITION*/
+            display: block;
+            text-align: left;
+            margin-bottom: 0.2rem;
+            padding-left: 5px;
+            /*tYPOGRAPHY*/
+            font-size: 1rem;
+            font-weight: 500;
+            color: $whiteText;
+        }
+
+        &-input {
+            width: 350px;
+            height: 30px;
+            border-radius: 10px;
+            border:1px solid #888;
+        }
+
+        &-textarea {
+            width: 350px;
+            min-height: 100px;
+            border-radius: 10px;
+        }
+
+        &-submit {
+            padding: 8px 10px;
+            width: 150px;
+            border-radius: 10px;
+            border:1px solid $mainRed;
+            background: $mainRed;
+            color: $whiteText;
+        }
+    }
+
+}

@@ -13,8 +13,8 @@
     }
 
     &__profile {
-        width: 200px;
-        height: 200px;
+        max-width: 150px;
+        max-height: 150px;
         border-radius: 100%;
     }
 
@@ -22,6 +22,7 @@
         color: $whiteText;
         font-weight: 300;
         font-size: 1.5rem;
+        margin-top: 40px;
     }
 
     &__subtitle {
