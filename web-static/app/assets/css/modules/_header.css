@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: rgba(44,44,44,.0);
+
+
+  &__group {
+ /*     outline:1px solid green;*/
+      width: 100%;
+      height: 60px;
+
+  }
+
+  &__logo {
+    float: left;
+    padding: 21px 20px 20px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  &__nav {
+    float: right;
+    margin: 0;
+    padding: 0;
+
+    & li {
+/*      outline:1px solid red;*/
+      display: inline-block;
+      float: left;
+      padding: 20px 20px;
+
+
+      &:last-child {
+        margin-right: 20px;
+      }
+
+      a {
+        font-size: 1.1rem;
+        color: white;
+      }
+
+      &:hover {
+        background: rgba(255,255,255,0.3);
+      }
+    }
+
+
+
+  }
+
+}
