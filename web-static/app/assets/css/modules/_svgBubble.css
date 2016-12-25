@@ -1,0 +1,104 @@
+.svgBubble {
+    position: fixed;
+}
+
+#b1 {
+    position: absolute;
+    top: 500px;
+    left: 80px;
+    animation: b1 12s linear infinite;
+}
+@keyframes b1 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(600px,-50px); opacity: 0; }
+}
+
+#b2 {
+    position: absolute;
+    top: 650px;
+    left: 30px;
+    animation: b2 13s linear infinite;
+}
+@keyframes b2 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(800px,-450px); opacity: 0; }
+}
+
+#b3 {
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    animation: b3 9s linear infinite;
+}
+@keyframes b3 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(200px,-500px); opacity: 0; }
+}
+
+#b4 {
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    animation: b4 11s linear infinite;
+}
+@keyframes b4 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(450px,-550px); opacity: 0; }
+}
+
+#b5 {
+    position: absolute;
+    top: 600px;
+    left: 120px;
+    animation: b5 7s linear infinite;
+}
+@keyframes b5 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(50px,-350px); opacity: 0; }
+}
+
+#b6 {
+    position: absolute;
+    top: 650px;
+    left: 620px;
+    animation: b6 7s linear infinite;
+}
+@keyframes b6 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(200px,-450px); opacity: 0; }
+}
+
+#b7 {
+    position: absolute;
+    top: 550px;
+    left: 520px;
+    animation: b7 12s linear infinite;
+}
+@keyframes b7 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(200px,-450px); opacity: 0; }
+}
+
+#b8 {
+    position: absolute;
+    top: 650px;
+    left: 1020px;
+    animation: b8 10s linear infinite;
+}
+@keyframes b8 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(60px,-550px); opacity: 0; }
+}
+
+#b9 {
+    position: absolute;
+    top: 650px;
+    left: 880px;
+    animation: b9 14s linear infinite;
+}
+@keyframes b9 {
+    0%      { opacity: 0.5; }
+    100%    {transform: translate(400px,-450px); opacity: 0; }
+}
+
+

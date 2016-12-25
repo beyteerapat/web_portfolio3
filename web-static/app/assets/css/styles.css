@@ -11,4 +11,5 @@
 @import 'modules/_sectionSkill';
 @import 'modules/_sectionInterest';
 @import 'modules/_sectionContact';
-@import 'modules/_footer.css';
+@import 'modules/_footer';
+@import 'modules/_svgBubble';
