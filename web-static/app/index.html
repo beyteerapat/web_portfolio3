@@ -28,20 +28,29 @@
       <header class="header">
 
         <div class="header__group">
-          <a class="header__logo" href="">MY PROFILE</a>
+          <a class="header__logo" href="#">MY PROFILE</a>
+          <div class="header__menu-icon"><i class="fa fa-navicon fa-2x" aria-hidden="true"></i></div>
+          <ul class="header__nav1">
+            <li><a href="#hero"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            <li><a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+            <li><a href="#experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+            <li><a href="#skill"><i class="fa fa-level-up" aria-hidden="true"></i></a></li>
+            <li><a href="#interest"><i class="fa fa-gratipay" aria-hidden="true"></i></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
           <ul class="header__nav">
-            <li><a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-level-up" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-gratipay" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+            <li><a href="#experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+            <li><a href="#skill"><i class="fa fa-level-up" aria-hidden="true"></i></a></li>
+            <li><a href="#interest"><i class="fa fa-gratipay" aria-hidden="true"></i></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
           </ul>
         </div>
 
       </header>
 
       <!-- SECTION HERO -->
-      <div class="hero">
+      <div id="hero" class="hero">
         <div class="wrapper">
           <div class="hero__group">
             <img class="hero__profile" src="assets/img/profile.jpg" alt="profile-image">
@@ -51,7 +60,7 @@
         </div> <!-- wrapper -->
       </div> <!-- HERO -->
       <!-- SECTION EDUCATION -->
-      <div class="education section">
+      <div id="education" class="education section">
         <div class="wrapper">
 
           <h1 class="section__title">EDUCATION</h1>
@@ -95,7 +104,7 @@
         </div> <!-- wrapper -->
       </div> <!-- education -->
       <!-- SECTION EXPERIENCE -->
-      <div class="experience section">
+      <div id="experience" class="experience section">
         <div class="wrapper">
 
           <h1 class="section__title experience__headline">EXPERIENCE</h1>
@@ -117,7 +126,7 @@
       </div>
 
       <!-- SECTION SKILL -->
-      <div class="skill section">
+      <div id="skill" class="skill section">
         <div class="wrapper">
 
           <h1 class="section__title">SKILL</h1>
@@ -213,7 +222,7 @@
         </div>
       </div>
       <!-- SECTION INTEREST -->
-      <div class="interest section">
+      <div id="interest" class="interest section">
 
         <div class="wrapper">
 
@@ -277,7 +286,7 @@
       </div> <!-- INTEREST -->
 
       <!-- SECTION CONTACT -->
-      <div class="contact section">
+      <div id="contact" class="contact section">
 
         <h1 class="section__title section__title-contact">CONTACT</h1>
 
@@ -310,11 +319,15 @@
           <p class="footer__right">BANGKOK, THAILAND</p>
         </div>
 
-
       </footer>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <script src="assets/js/jquery-3.1.1.min.js"></script>
+
+            <!-- MY JAVASCRIPT -->
+      <script src="assets/js/app.js"></script>
 
     </body>
     </html>

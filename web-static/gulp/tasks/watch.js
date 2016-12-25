@@ -30,6 +30,6 @@ gulp.task('cssInject', ['styles'], function(){
         .pipe(browsersync.stream());
 });
 
-gulp.task('scriptsRefresh',['scripts'], function(){
+gulp.task('scriptsRefresh', function(){
     browsersync.reload();
 });

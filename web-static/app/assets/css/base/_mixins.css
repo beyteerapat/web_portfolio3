@@ -1,4 +1,16 @@
-@define-mixin atSmall {
+@define-mixin atMobile {
+  @media (max-width: 459px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atWeb {
+  @media (min-width: 460px) {
+    @mixin-content;
+  }
+}
+
+/*@define-mixin atSmall {
     @media (min-width: 530px) {
         @mixin-content;
     }
@@ -14,7 +26,7 @@
     @media (min-width: 1020px) {
         @mixin-content;
     }
-}
+}*/
 /*
 @define-mixin clearfix {
     &::after {
