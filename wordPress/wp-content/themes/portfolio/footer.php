@@ -13,6 +13,16 @@
 
 <?php wp_footer(); ?>
 
+      <!-- FOOTER -->
+      <footer class="footer">
+
+        <div class="footer__group wrapper">
+          <p class="footer__left">KHW.TEERAPAT@GMAIL.COM</p>
+          <p class="footer__right">BANGKOK, THAILAND</p>
+        </div>
+
+      </footer>
+
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
