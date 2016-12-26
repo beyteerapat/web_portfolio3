@@ -1,6 +1,6 @@
 .experience {
     text-align: center;
-    background:url("/assets/img/experience-bg.jpg")  center center no-repeat fixed;
+    background:#333 url("assets/img/experience-bg.jpg") center center no-repeat fixed;
     background-size: cover;
     position: relative;
 
@@ -22,10 +22,10 @@
 
     &__subtitle {
         /*border: 1px solid blue;*/
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 200;
         color: $grayText;
-        margin: 0;
+        margin: 3px 0 0 0;
     }
 }
 
