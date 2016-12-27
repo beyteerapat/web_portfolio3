@@ -3,6 +3,13 @@
 Template Name : Home Page
 */
 
+// Advanced Custom Field
+// Hero Section
+$hero_image         = get_field('hero_image');
+$hero_title         = get_field('hero_title');
+$hero_subtitle      = get_field('hero_subtitle');
+
+
 get_header(); ?>
 
       <!-- svg Bubble -->
@@ -24,9 +31,9 @@ get_header(); ?>
       <div id="hero" class="hero">
         <div class="wrapper">
           <div class="hero__group">
-            <img class="hero__profile" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profile.jpg" alt="profile-image">
-            <h1 class="hero__title">TEERAPAT KHOWSIHAWAT</h1>
-            <h3 class="hero__subtitle">ティーラパット　コーシハワット</h3>
+            <img class="hero__profile" src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt'] ?>">
+            <h1 class="hero__title"><?php echo $hero_title; ?></h1>
+            <h3 class="hero__subtitle"><?php echo $hero_subtitle; ?></h3>
           </div> <!-- hero group -->
         </div> <!-- wrapper -->
       </div> <!-- HERO -->
