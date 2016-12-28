@@ -9,6 +9,13 @@ $hero_image         = get_field('hero_image');
 $hero_title         = get_field('hero_title');
 $hero_subtitle      = get_field('hero_subtitle');
 
+//Education Section
+$education_section_title = get_field('education_section_title');
+$education_year          = get_field('education_year');
+$education_subtitle      = get_field('education_subtitle');
+$education_location      = get_field('education_location');
+$education_background    = get_field('education_background');
+
 
 get_header(); ?>
 
@@ -41,43 +48,31 @@ get_header(); ?>
       <div id="education" class="education section">
         <div class="wrapper">
 
-          <h1 class="section__title">EDUCATION</h1>
+          <h1 class="section__title"><?php echo $education_section_title; ?></h1>
+
+          <?php $loop = new WP_Query( array(
+            'post_type' => 'education',
+            'orderby'   => 'post_id',
+            'order'     => 'ASC'
+          )); ?>
+
+          <?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
           <div class="education__row">
             <div class="education__group">
               <div class="education__img-cover">
-                <a href="http://www.wfs.ac.jp/"><img class="education__img" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/education-wakayama-medium-cover.jpg" alt="edu-wakayama"></a>
+                <a href=""><img class="education__img" src="<?php the_field('education_background'); ?>"></a>
               </div>
               <div class="education__text">
-                <p class="education__text-year">2013</p>
-                <p class="education__text-title">WAKAYAMA COLLEGE OF FOREIGN STUDIES</p>
-                <p class="education__text-location">WAKAYAMA, JAPAN</p>
+                <p class="education__text-year"><?php the_field('education_year'); ?></p>
+                <p class="education__text-title"><?php the_title(); ?></p>
+                <p class="education__text-subtitle"><?php the_field('education_subtitle'); ?></p>
+                <p class="education__text-location"><?php the_field('education_location'); ?></p>
               </div>
             </div>
           </div>
 
-          <div class="education__row">
-            <div class="education__group">
-              <a href="http://www.engr.tu.ac.th/en/"><img class="education__img" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/education-thammasat-medium-cover.jpg" alt="edu-thammasat"></a>
-              <div class="education__text">
-                <p class="education__text-year">2012</p>
-                <p class="education__text-title">THAMMASAT UNIVERSITY</p>
-                <p class="education__text-subtitle">MECHANICAL ENGINEERING</p>
-                <p class="education__text-location">THAILAND</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="education__row">
-            <div class="education__group">
-              <a href="http://www.sg.ac.th/site/"><img class="education__img" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/education-sg-medium-cover.jpg" alt="edu-sg"></a>
-              <div class="education__text">
-                <p class="education__text-year">2008</p>
-                <p class="education__text-title">SAINT GABRIEL'S COLLEGE</p>
-                <p class="education__text-location">THAILAND</p>
-              </div>
-            </div>
-          </div>
+            <?php endwhile; ?>
 
         </div> <!-- wrapper -->
       </div> <!-- education -->
