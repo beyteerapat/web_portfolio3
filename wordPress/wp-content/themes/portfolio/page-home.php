@@ -26,6 +26,9 @@ $interest_section_title     = get_field('interest_section_title');
 $interest_image             = get_field('interest_image');
 $interest_url               = get_field('interest_url');
 
+// Contact Section
+$contact_section_title      = get_field('contact_section_title');
+
 
 get_header(); ?>
 
@@ -253,24 +256,48 @@ get_header(); ?>
       <!-- SECTION CONTACT -->
       <div id="contact" class="contact section">
 
-        <h1 class="section__title section__title-contact">CONTACT</h1>
+        <h1 class="section__title section__title-contact"><?php echo $contact_section_title; ?></h1>
 
-        <form class="contact__form">
+        <!-- STATIC FORM -->
+        <!-- <form>
+            <div class="contact__form">
+              <div class="contact__group">
+                <label class="contact__group-label" for="name">Your Name</label>
+                <input class="contact__group-input" type="text" name="name" placeholder=" Your Name">
+              </div>
+              <div class="contact__group">
+                <label class="contact__group-label" for="email">Your Email</label>
+                <input class="contact__group-input" type="email" name="email" placeholder=" Your Email">
+              </div>
+              <div class="contact__group">
+                <label class="contact__group-label" for="email">Your Email</label>
+                <textarea class="contact__group-textarea" name="mesage"  placeholder=" Message"></textarea>
+              </div>
+
+              <input class="contact__group-submit" type="submit" value="submit">
+            </div>
+        </form> -->
+
+        <!-- DYNAMIC FORM use in contact form 7 -->
+        <!-- <form class="contact__form">
           <div class="contact__group">
             <label class="contact__group-label" for="name">Your Name</label>
-            <input class="contact__group-input" type="text" name="name" placeholder=" Your Name">
+            [text* name class:contact__group-input placeholder "Your Name"]
           </div>
           <div class="contact__group">
             <label class="contact__group-label" for="email">Your Email</label>
-            <input class="contact__group-input" type="email" name="name" placeholder=" Your Email">
+            [email* email class:contact__group-input placeholder "Your Email"]
           </div>
           <div class="contact__group">
             <label class="contact__group-label" for="email">Your Email</label>
-            <textarea class="contact__group-textarea" placeholder=" Message"></textarea>
+            [textarea message class:contact__group-textarea x3 placeholder " Message"]
           </div>
+          [submit class:contact__group-submit "Send Message"]
+          </div>
+        </form> -->
 
-          <input class="contact__group-submit" type="submit" name="submit">
-        </form>
+
+        <?php echo do_shortcode('[contact-form-7 id="65" title="Primary Contact"]'); ?>
 
         </div>
 
