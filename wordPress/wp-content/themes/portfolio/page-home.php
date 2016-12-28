@@ -21,6 +21,11 @@ $experience_section_title   = get_field('experience_section_title');
 $experience_subtitle        = get_field('experience_subtitle');
 $experience_year            = get_field('experience_year');
 
+// Inerest Section
+$interest_section_title     = get_field('interest_section_title');
+$interest_image             = get_field('interest_image');
+$interest_url               = get_field('interest_url');
+
 
 get_header(); ?>
 
@@ -218,58 +223,26 @@ get_header(); ?>
 
         <div class="wrapper">
 
-          <p class="section__title">Interest &amp; Hobbies</p>
+          <p class="section__title"><?php echo $interest_section_title; ?></p>
 
           <div class="card__group">
 
+          <?php $loop = new WP_Query(array(
+            'post_type' => 'interest',
+            'orderby'   => 'post_id',
+            'order'     => 'ASC'
+          )); ?>
+
+          <?php while($loop->have_posts()) : $loop->the_post(); ?>
+
             <div class="card">
-              <a href="https://facebook.github.io/react/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-react.png" alt="react" style="width:100%"></a>
+              <a href="<?php the_field('interest_url'); ?>"><img src="<?php the_field('interest_image'); ?>" style="width:100%"></a>
               <div class="container">
-                <h4 class="card-title">React</h4>
+                <h4 class="card-title"><?php the_title(); ?></h4>
               </div>
             </div> <!-- card -->
-            <div class="card">
-              <a href="http://es6-features.org/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-es6.png" alt="es6" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">ES2015</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="http://gulpjs.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-gulp.png" alt="gulp" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">Gulp</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="https://nodejs.org/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-nodejs.png" alt="nodejs" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">nodejs</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="https://www.docker.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-docker.png" alt="docker" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">docker</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="https://git-scm.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-github.png" alt="es6" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">Github</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="https://www.udemy.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-udemy.png" alt="udemy" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">Udemy</h4>
-              </div>
-            </div> <!-- card -->
-            <div class="card">
-              <a href="https://www.lynda.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/interest-lynda.png" alt="lynda" style="width:100%"></a>
-              <div class="container">
-                <h4 class="card-title">Lynda</h4>
-              </div>
-            </div> <!-- card -->
+
+           <?php endwhile; ?>
 
           </div> <!-- card group -->
 
