@@ -16,6 +16,11 @@ $education_subtitle      = get_field('education_subtitle');
 $education_location      = get_field('education_location');
 $education_background    = get_field('education_background');
 
+// Experience Section
+$experience_section_title   = get_field('experience_section_title');
+$experience_subtitle        = get_field('experience_subtitle');
+$experience_year            = get_field('experience_year');
+
 
 get_header(); ?>
 
@@ -80,21 +85,35 @@ get_header(); ?>
       <div id="experience" class="experience section">
         <div class="wrapper">
 
-          <h1 class="section__title experience__headline">EXPERIENCE</h1>
+          <h1 class="section__title experience__headline"><?php echo $experience_section_title; ?></h1>
 
-          <div class="experience__group">
-            <p class="experience__title">FAMILY BUSINESS</p>
-          </div>
+            <?php $loop = new WP_Query(array(
+                'post_type' => 'experience',
+                'orderby'   => 'post_id',
+                'order'     => 'ASC'
+              )) ?>
 
-          <div class="experience__group">
+              <?php while($loop->have_posts()) : $loop->the_post(); ?>
+
+              <div class="experience__group">
+                <p class="experience__title"><?php the_title(); ?></p>
+                <p class="experience__subtitle"><?php the_field('experience_subtitle'); ?></p>
+                <p class="experience__subtitle"><?php the_field('experience_year'); ?></p>
+              </div>
+
+            <?php endwhile; ?>
+<!--           <div class="experience__group">
             <p class="experience__title">ACRO THAILAND</p>
-            <p class="experience__subtitle">ENGINEER</p>
+            <p class="experience__subtitle">- ENGINEER -</p>
+            <p class="experience__subtitle">[2013-2014]</p>
           </div>
 
           <div class="experience__group">
             <p class="experience__title">THAI YAMAHA MOTOR CO.,LTD</p>
-            <p class="experience__subtitle">INTERN ENGINEER</p>
-          </div>
+            <p class="experience__subtitle">- INTERN ENGINEER -</p>
+            <p class="experience__subtitle">[2012]</p>
+          </div> -->
+
         </div>
       </div>
 
