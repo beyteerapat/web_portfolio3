@@ -20,6 +20,7 @@ $education_background    = get_field('education_background');
 $experience_section_title   = get_field('experience_section_title');
 $experience_subtitle        = get_field('experience_subtitle');
 $experience_year            = get_field('experience_year');
+$experience_background      = get_field('experience_background');
 
 // Inerest Section
 $interest_section_title     = get_field('interest_section_title');
@@ -90,7 +91,7 @@ get_header(); ?>
         </div> <!-- wrapper -->
       </div> <!-- education -->
       <!-- SECTION EXPERIENCE -->
-      <div id="experience" class="experience section">
+      <div id="experience" class="experience section" style="background:#333 url('<?php echo $experience_background; ?>') center center no-repeat fixed; background-size: cover; position: relative;">
         <div class="wrapper">
 
           <h1 class="section__title experience__headline"><?php echo $experience_section_title; ?></h1>

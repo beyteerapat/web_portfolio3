@@ -1327,9 +1327,6 @@ img {
 
 .experience {
     text-align: center;
-    background:#333 url('/wp-content/themes/portfolio/assets/img/experience-bg.jpg') center center no-repeat fixed;
-    background-size: cover;
-    position: relative;
 }
 
 .experience__headline {
