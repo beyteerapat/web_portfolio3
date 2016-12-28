@@ -4,3 +4,9 @@ Version
 1.0 - 28/12/2016
     - Complete live website
 
+1.0.1 28/12/2016
+    - change Experience background from static to dynamic
+    @ styles.css
+    @ page-home.php
+    + wordPress > Custom Field > Experience Section
+        add field -> Experience Background
