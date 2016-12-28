@@ -1777,7 +1777,7 @@ img {
 /*========= EDIT FOR WORDPRESS ==========*/
 
 /*Fix header margin offset*/
-.header {
+/*.header {
 	top: 32px;
 }
 
@@ -1785,5 +1785,5 @@ img {
 	.header {
 	  top: 46px;
 	}
-}
+}*/
 
