@@ -10,3 +10,13 @@ Version
     @ page-home.php
     + wordPress > Custom Field > Experience Section
         add field -> Experience Background
+
+1.1.1 30/12/2016
+    - change Skill section from static to dynamic
+    @ styles.css
+    @ page-home.php
+    + wordPress > Custom Field > Skill Section
+        add field -> skill section title
+    + wordPress > Custom Field > Skill Post
+        add field > skill bar
+    + wordPress > CPT UI > skill
