@@ -22,6 +22,10 @@ $experience_subtitle        = get_field('experience_subtitle');
 $experience_year            = get_field('experience_year');
 $experience_background      = get_field('experience_background');
 
+// Skill Section
+$skill_section_title        = get_field('skill_section_title');
+$skill_bar                  = get_field('skill_bar');
+
 // Inerest Section
 $interest_section_title     = get_field('interest_section_title');
 $interest_image             = get_field('interest_image');
@@ -130,93 +134,28 @@ get_header(); ?>
       <div id="skill" class="skill section">
         <div class="wrapper">
 
-          <h1 class="section__title">SKILL</h1>
+          <h1 class="section__title"><?php echo $skill_section_title; ?></h1>
 
-          <div class="skill__list">
-            <div class="skill__group">
-              <p class="skill__group-title">MS.OFFICE</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-1"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">AUTOCAD</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-2"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">PHOTOSHOP</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-3"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">ILLUSTRATOR</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-4"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">GIT</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-5"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">HTML</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-6"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">CSS</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-7"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">JQUERY</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-8"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">BOOTSTRAP</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-9"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">WORDPRESS</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-10"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">GULP</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-11"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
-            <div class="skill__group">
-              <p class="skill__group-title">JAPANESE</p>
-              <div class="skill__group-bar">
-                <div class="skill__group-bar-top skill__group-bar-top-12"></div>
-                <div class="skill__group-bar-bottom"></div>
-              </div> <!-- bar -->
-            </div> <!-- skill -->
+            <div class="skill__list">
+
+              <?php $loop = new WP_Query(array(
+                'post_type'     => 'skill',
+                'posts_per_page'=> -1,
+                'orderby'       => 'post_id',
+                'order'         => 'ASC'
+              )); ?>
+
+              <?php while($loop->have_posts()) : $loop->the_post(); ?>
+
+                <div class="skill__group">
+                  <p class="skill__group-title"><?php the_title(); ?></p>
+                  <div class="skill__group-bar">
+                    <div class="skill__group-bar-top" style="width:<?php the_field('skill_bar'); ?>px"></div>
+                    <div class="skill__group-bar-bottom"></div>
+                  </div> <!-- bar -->
+                </div> <!-- skill -->
+
+              <?php endwhile; ?>
 
           </div>  <!-- list -->
 
